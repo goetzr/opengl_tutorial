@@ -1,0 +1,4 @@
+{
+  "cmake.buildDirectory": "/home/rgoetz/builds/opengl_draw_triangle",
+  "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools"
+}
