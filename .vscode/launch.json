@@ -9,8 +9,8 @@
           "program": "${command:cmake.launchTargetPath}",
           "args": [],
           "stopAtEntry": false,
-          "cwd": "${workspaceFolder}",
-          "externalConsole": true,
+          "cwd": "${command:cmake.launchTargetDirectory}",
+          "externalConsole": false,
           "MIMode": "gdb",
           "setupCommands": [
               {

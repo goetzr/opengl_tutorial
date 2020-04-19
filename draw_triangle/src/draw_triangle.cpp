@@ -112,14 +112,19 @@ int main(int argc, char** argv) {
     processInput(window);
 
     // Rendering commands here
+    // =================================================================================================
     glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
     glUseProgram(shaderProgram);
     glBindVertexArray(VAO);
     glDrawArrays(GL_TRIANGLES, 0, 3);
+    // =================================================================================================
 
+    // Now that rendering for this frame is complete, swap the back buffer, which gets rendered to,
+    // with the front buffer, which is shown on the screen.
     glfwSwapBuffers(window);
+    // Process received events, updating the window state, then calling the corresponding callback functions.
     glfwPollEvents();
   }
 
